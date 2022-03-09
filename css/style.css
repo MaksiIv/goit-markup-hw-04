@@ -75,14 +75,23 @@ img {
 
 /* Навигация и контакты шапки */
 .header-contacts-list {
+  display: flex;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
 
   color: var(--primary-text-color);
+}
+
+.header-contacts-svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .nav-header-list {
@@ -117,8 +126,7 @@ img {
   margin-right: 50px;
 }
 
-.nav-list .nav-header-list,
-.header-contacts-list {
+.nav-list .nav-header-list {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -240,10 +248,6 @@ img {
 }
 
 /* Преимущества компании */
-/* .company-advantages {
- padding-top: 107px;
-  
-} */
 
 .advantages-section {
   padding-top: 94px;
@@ -263,6 +267,22 @@ img {
   margin-bottom: 30px;
 }
 
+.advantages-item-svg {
+  display: block;
+  content: '';
+  width: 70px;
+  height: 70px;
+  align-items: center;
+
+  /* background-color: var(--button-primary-color);
+  border-radius: 4px;
+  background-size: none;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  margin-bottom: 30px; */
+}
+/* 
 .icon-antenna::before {
   background-image: url(../images/antenna.svg);
 }
@@ -277,7 +297,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 .advantages-item {
   width: 270px;
@@ -312,8 +332,6 @@ img {
 .work-section {
   padding-bottom: 94px;
   padding-top: 94px;
-
-  background-color: aqua;
 }
 
 .work-examples {
@@ -445,7 +463,6 @@ img {
   padding-left: 24px;
 
   border: 1px solid #eeeeee;
-}
 }
 
 /* .portfolio-item:nth-child(3n) {
