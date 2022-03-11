@@ -253,51 +253,23 @@ img {
   padding-top: 94px;
 }
 
-.advantages-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-
-  background-color: var(--button-primary-color);
-  border-radius: 4px;
-  background-size: none;
-  background-repeat: no-repeat;
-  background-position: 50%;
-
-  margin-bottom: 30px;
-}
-
 .advantages-item-svg {
   display: block;
   content: '';
   width: 70px;
   height: 70px;
-  align-items: center;
+  margin: auto;
+}
 
-  /* background-color: var(--button-primary-color);
+.advantages-icon {
+  height: 120px;
+  background-color: var(--button-primary-color);
   border-radius: 4px;
   background-size: none;
-  background-repeat: no-repeat;
-  background-position: 50%;
 
-  margin-bottom: 30px; */
+  padding: 25px 0;
+  margin-bottom: 30px;
 }
-/* 
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-} */
 
 .advantages-item {
   width: 270px;
