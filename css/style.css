@@ -10,6 +10,7 @@
   --accent-color: #2196f3;
   --button-primary-color: #f5f4fa;
   --primary-bg-color: #ffffff;
+  --primary-icon-color: #afb1b8;
   --portfolio-item-gap: 30px;
 }
 
@@ -92,6 +93,13 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.header-contacts-list:hover .header-contacts-svg,
+.header-contacts-list:focus .header-contacts-svg {
+  color: var(--accent-color);
 }
 
 .nav-header-list {
@@ -359,13 +367,48 @@ img {
 
 .our-team-job-position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
+}
+
+.our-team-media {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: auto;
+}
+
+.our-team-link {
+  display: block;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-bg-color);
+  fill: var(--primary-icon-color);
+}
+
+.our-team-icon {
+  margin-top: 11px;
+  width: 20px;
+  height: 20px;
+}
+
+.our-team-link:hover,
+.our-team-link:focus,
+.our-team-icon:hover,
+.our-team-icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-bg-color);
+}
+
+.our-team-contacts:not(:last-child) {
+  margin-right: 10px;
 }
 
 .our-team-item {
