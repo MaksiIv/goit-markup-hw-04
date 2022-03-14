@@ -11,7 +11,7 @@
   --button-primary-color: #f5f4fa;
   --primary-bg-color: #ffffff;
   --primary-icon-color: #afb1b8;
-  --portfolio-item-gap: 24px;
+  --portfolio-item-gap: 30px;
 }
 
 html {
@@ -454,9 +454,20 @@ img {
   fill: var(--primary-icon-color);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-item:focus .clients-icon,
+.clients-item:hover .clients-icon  {
   fill: var(--accent-color);
+  }
+
+.clients-icon:hover,
+.clients-icon:focus  {
+  fill: var(--accent-color);
+}
+
+
+.clients-item:focus,
+.clients-item:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .clients-item:not(:last-child) {
@@ -509,12 +520,12 @@ img {
 }
 
 .portfolio-item {
-  /* width: calc((100%-60px) / 3); */
+  width: calc((100% - 90px) / 3);
   /* margin-bottom: 30px;
   margin-right: 30px; */
   margin-left: var(--portfolio-item-gap);
   margin-top: var(--portfolio-item-gap);
-  flex-basis: calc(100% / 3 -var(--portfolio-item-gap));
+  /* flex-basis: calc(100% / 3 -var(--portfolio-item-gap)); */
 
   color: #eeeeee;
   border: 1px solid #EEEEEE;
